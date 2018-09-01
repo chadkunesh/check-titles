@@ -1,17 +1,17 @@
 package newpackage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 //comment the above line and uncomment below line to use Chrome
-//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 public class Main {
 
     public static void main(String[] args) {
         // declaration and instantiation of objects/variables
         //System.setProperty("webdriver.gecko.driver","C:\\drivers\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
+        //WebDriver driver = new FirefoxDriver();
         //comment the above 2 lines and uncomment below 2 lines to use Chrome
         //System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver.exe");
-        //WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
         String baseUrl = "http://demo.guru99.com/test/newtours/";
         String expectedTitle = "Welcome: Mercury Tours";
